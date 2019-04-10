@@ -1,0 +1,38 @@
+/* ====================================
+   Customize Pagination
+   ==================================== */
+
+.pagination {
+    margin-top: 0;
+    @include clearfix;
+    display: block;
+    margin-top: 15px;
+    font-family: $font-family-special;
+    text-align: right;
+    li {
+        display: inline-block;
+        >a {
+            display: block;
+            background-color: white;
+            border: none;
+            @include transition(all, 0.2, linear);
+            min-width: 32px;
+            height: 32px;
+            line-height: 32px;
+            padding: 0 8px;
+            text-align: center;
+            border-radius: 3px;
+            border: 1px solid #ddd;
+        }
+        &.active,
+        &:hover {
+            >a {
+                background-color: $brand-primary;
+                color: white;
+            }
+        }
+        &+li {
+            margin-left: 8px;
+        }
+    }
+}

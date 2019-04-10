@@ -1,0 +1,66 @@
+/* ====================================   Global fonts   ==================================== */
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProText-RegularItalic.eot');
+    src: local('☺'),
+        url('../fonts/SFProText-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-RegularItalic.woff') format('woff'),
+        url('../fonts/SFProText-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProText-Regular.eot');
+    src: local('☺'),
+        url('../fonts/SFProText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-Regular.woff') format('woff'),
+        url('../fonts/SFProText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProText-BoldItalic.eot');
+    src: local('☺'),
+        url('../fonts/SFProText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-BoldItalic.woff') format('woff'),
+        url('../fonts/SFProText-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProText-Bold.eot');
+    src: local('☺'),
+        url('../fonts/SFProText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-Bold.woff') format('woff'),
+        url('../fonts/SFProText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProText-Medium.eot');
+    src: local('☺'),
+        url('../fonts/SFProText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-Medium.woff') format('woff'),
+        url('../fonts/SFProText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url('../fonts/SFProText-Semibold.eot');
+    src: local('☺'),
+        url('../fonts/SFProText-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProText-Semibold.woff') format('woff'),
+        url('../fonts/SFProText-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}

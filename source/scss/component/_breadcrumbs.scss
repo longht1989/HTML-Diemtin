@@ -1,0 +1,100 @@
+/* ====================================
+   Customize breadcrumbs
+   ==================================== */
+
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 16px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: $border-radius-base;
+    font-size: 20px;
+    line-height: 1.1em;
+    font-weight: bold;
+
+    >li {
+        text-transform: normal;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+
+        +li:before {
+            // [converter] Workaround for https://github.com/sass/libsass/issues/1115
+            $nbsp: "\00a0";
+            content: "#{$breadcrumb-separator}#{$nbsp}"; // Unicode space added since inline-block means non-collapsing white-space
+            padding: 0 5px;
+            color: $breadcrumb-color;
+            font-weight: normal;
+        }
+    }
+
+    >.active {
+        color: $brand-primary;
+    }
+}
+
+.breadcrumbs {
+    margin-bottom: 20px;
+    position: relative;
+
+    .cate {
+        font-size: 32px;
+        display: inline-block;
+        font-weight: 500;
+
+        a {
+            color: black;
+
+            &:hover {
+                color: $brand-primary;
+            }
+        }
+
+        &+.cate {
+            font-weight: normal;
+
+            &::before {
+                content: '/';
+                display: inline;
+                padding: 0 8px;
+                color: #111;
+            }
+
+            &:last-child {
+                a {
+                    color: #777;
+
+                    &:hover {
+                        color: $brand-primary;
+                    }
+                }
+            }
+        }
+
+        &--alt {
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid $brand-primary;
+            transition: all 0.2s ease-in-out;
+
+            a {
+                color: $brand-primary;
+
+                &:hover {
+                    color: $brand-success;
+                }
+            }
+
+            &:hover {
+                border-color: $brand-success;
+            }
+        }
+    }
+
+    .subcate {
+        font-size: 14px;
+        display: inline-block;
+    }
+}

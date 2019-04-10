@@ -1,0 +1,63 @@
+/* style for story */
+
+.story {
+    @include clearfix;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.2s linear !important;
+
+    &+.story {
+        margin-top: 20px;
+    }
+
+    &__thumb {
+        overflow: hidden;
+        float: left;
+        border-radius: 5px;
+        margin-right: 15px;
+        width: 33.33%;
+        @include breakpoint(sm){
+            max-width: 150px;
+        }
+    }
+
+    &__header {
+        overflow: hidden;
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 1.3em;
+        margin: -2px 0 5px;
+        max-height: 5.2em;
+        overflow: hidden;
+
+        a {
+            &:visited {
+                color: #888;
+
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+
+    &__meta {
+        font-size: 12px;
+        line-height: 1.4em;
+        opacity: 0.4;
+    }
+
+    &__source {}
+
+    &__cate {}
+
+    &__time {
+        &::before {
+            content: '-';
+            display: inline-block;
+            padding: 0 5px;
+        }
+    }
+}

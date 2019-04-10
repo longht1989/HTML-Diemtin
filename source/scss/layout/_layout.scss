@@ -1,0 +1,89 @@
+html {
+    @include breakpoint(sm) {
+        background-color: #e9ebee;
+    }
+}
+
+body {
+    @include breakpoint(sm) {
+        background-color: white;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+#site-content {
+    @include clearfix;
+    margin-bottom: 20px;
+}
+
+.site-wrap {
+    padding: 0 10px;
+    @include clearfix();
+    &+.site-wrap {
+        margin-top: 24px;
+    }
+}
+
+
+// main-col
+.main-col {
+    &.full,
+    &.large {
+        width: 100%;
+        float: none;
+    }
+}
+
+.sidebar-col {}
+
+&.two-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+    >* {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 5px;
+    }
+}
+
+&.three-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+    >* {
+        width: 33.33%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 5px;
+    }
+}
+
+&.four-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+    >* {
+        width: 25%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 5px;
+    }
+}
+
+
+// go top
+#gotop {
+    // display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 10%;
+}

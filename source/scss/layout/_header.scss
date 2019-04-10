@@ -1,0 +1,81 @@
+/* ====================================   Header's style   ==================================== */
+
+.site-header {
+    margin-bottom: 10px;
+
+    &__content {
+        @include clearfix();
+        background-color: white;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        margin-bottom: 10px;
+        padding: 10px;
+
+        &.affix {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            background: white;
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.13);
+            z-index: 100;
+            @include breakpoint(sm){
+                max-width: 598px;
+                margin: auto;
+            }
+        }
+    }
+
+    .logo {
+        float: left;
+        line-height: 24px;
+        width: 24px;
+
+        img {}
+    }
+
+    .search-wrap {
+        width: calc(100% - 68px);
+        position: relative;
+        border-radius: 20px;
+        background-color: #EFEFEF;
+        height: 24px;
+        float: left;
+        margin: 0 10px;
+
+        .form-control {
+            border-color: transparent;
+            background: transparent;
+            border-radius: 20px;
+            box-shadow: none;
+            padding-left: 28px;
+            font-size: 12px;
+            height: 24px;
+
+            &:focus,
+            &:hover {
+                border-color: $brand-primary;
+            }
+        }
+
+        .icon-search {
+            position: absolute;
+            top: 6px;
+            left: 10px;
+            width: 11px;
+            height: 11px;
+        }
+    }
+
+    .user {
+        &-wrap {
+            float: right;
+        }
+
+        &__avatar {
+            display: block;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+}
