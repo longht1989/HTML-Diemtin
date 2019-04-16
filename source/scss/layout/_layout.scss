@@ -17,7 +17,7 @@ body {
 
 #site-content {
     @include clearfix;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
 }
 
 .site-wrap {
@@ -30,16 +30,6 @@ body {
 
 
 // main-col
-.main-col {
-    &.full,
-    &.large {
-        width: 100%;
-        float: none;
-    }
-}
-
-.sidebar-col {}
-
 &.two-cols {
     @include clearfix;
     font-size: 0;

@@ -6,10 +6,11 @@
     &__content {
         @include clearfix();
         background-color: white;
-        border-bottom: 1px solid #ddd;
         position: relative;
         margin-bottom: 10px;
         padding: 10px;
+        transition: all 0.2s ease-in-out;
+        border-bottom: 1px solid transparent;
 
         &.affix {
             position: fixed;
@@ -17,9 +18,11 @@
             right: 0;
             left: 0;
             background: white;
-            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.13);
+            border-bottom-color: #ddd;
+            // box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.13);
             z-index: 100;
-            @include breakpoint(sm){
+
+            @include breakpoint(sm) {
                 max-width: 598px;
                 margin: auto;
             }
@@ -64,6 +67,41 @@
             left: 10px;
             width: 11px;
             height: 11px;
+        }
+
+        &.active {
+            background-color: $brand-primary;
+
+            .form-control {
+                color: white;
+                transition: all 0.2s ease-in-out;
+
+                &::placeholder {
+                    /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: white;
+                    opacity: 1;
+                    /* Firefox */
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    color: white;
+                }
+
+                &::-ms-input-placeholder {
+                    /* Microsoft Edge */
+                    color: white;
+                }
+
+                &:focus,
+                &:hover {
+                    background-color: darken($brand-primary, 8%);
+                }
+            }
+        }
+
+        .dropdown-menu {
+            right: 0;
         }
     }
 

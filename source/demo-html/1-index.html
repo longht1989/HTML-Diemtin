@@ -28,9 +28,14 @@
         <div class="site-header__content">
             <div class="logo"><a href="1-index.html"><img class="img-responsive" src="../App_Themes/img/logo.png" alt=""></a></div>
             <!-- search -->
-            <div class="search-wrap">
+            <div class="dropdown search-wrap">
                 <span class="icon-search"><img src="../App_Themes/img/search.png" alt="" class="img-responsive"></span>
-                <input type="text" placeholder="Từ khóa tìm kiếm" class="form-control">
+                <input type="text" placeholder="Từ khóa tìm kiếm" class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="4-cluster.html">Suggestion keyword</a></li>
+                    <li><a href="4-cluster.html">Suggestion keyword</a></li>
+                    <li><a href="4-cluster.html">Suggestion keyword</a></li>
+                </ul>
             </div>
             <!-- user -->
             <div class="user-wrap">
@@ -48,6 +53,40 @@
                 <h3 class="cate"><a href="2-category.html">Xu hướng</a></h3>
             </div>
             <!-- cluster -->
+            <section class="cluster">
+                <div class="cluster__header">
+                    <h3 class="cluster__title"><a href="4-cluster.html">AFF SUZIKI CUP 2018</a><span class="count">113 tin</span></h3>
+                </div>
+                <div class="cluster__content">
+                    <article class="story">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/150x150?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Nạn nhân vụ tai nạn liên hoàn ở Hà Nội: Xót xa nữ sinh nghèo đang chờ ngày tốt nghiệp sinh nghèo đang chờ ngày tốt nghiệp</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="cluster">
+                <div class="cluster__header">
+                    <h3 class="cluster__title"><a href="4-cluster.html">AFF SUZIKI CUP 2018</a><span class="count">113 tin</span></h3>
+                </div>
+                <div class="cluster__content">
+                    <article class="story">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/150x150?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Nạn nhân vụ tai nạn liên hoàn ở Hà Nội: Xót xa nữ sinh nghèo đang chờ ngày tốt nghiệp sinh nghèo đang chờ ngày tốt nghiệp</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
             <section class="cluster">
                 <div class="cluster__header">
                     <h3 class="cluster__title"><a href="4-cluster.html">AFF SUZIKI CUP 2018</a><span class="count">113 tin</span></h3>
@@ -83,9 +122,6 @@
                     </article>
                 </div>
             </section>
-            <!-- banner -->
-            <div class="qc"><a href="#"><img src="fig-image/ads300x250-1.jpg" alt=""></a></div>
-            <!-- .End banner -->
         </div>
     </main>
     <!-- .End site content -->

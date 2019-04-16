@@ -1,7 +1,22 @@
 // .category-highlight-zone
-.cate-highlight {
-    @include clearfix;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ddd;
+.category {
+    &-listing {
+        &>li {
+            font-size: 20px;
+            line-height: 1.4;
+
+            &+li {
+                margin-top: 16px;
+            }
+        }
+
+        a {
+        	display: block;
+            color: $brand-primary;
+
+            &:hover {
+                color: $brand-success;
+            }
+        }
+    }
 }

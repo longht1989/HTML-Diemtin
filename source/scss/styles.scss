@@ -30,18 +30,14 @@
 
 /* component */
 
-// @import "component/sprites";
 @import "component/region";
 @import "component/story";
 @import "component/breadcrumbs";
-// @import "component/pagination";
-// @import "component/searchbox";
-// @import "component/comment";
 
 /* pages */
 
 @import "page/article";
-// @import "page/live";
+@import "page/category";
 
 /* share for all  */
 

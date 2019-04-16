@@ -3,18 +3,4 @@
 _::-webkit-full-page-media,
 _:future,
  :root {
-    .zone--highlight {
-        max-height: 525px;
-        overflow: hidden;
-    }
-    .zone--special {
-        max-height: 177px;
-        overflow: hidden;
-    }
-    .story--horizontal,
-    .zone--special .story {
-        .story__header {
-            overflow: visible;
-        }
-    }
 }
