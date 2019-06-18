@@ -19,19 +19,17 @@
         align-items: center;
 
         &>li {
-            width: 33.33%;
             text-align: center;
 
             .icon {
                 display: block;
                 margin: 0px auto 5px;
-                max-height: 20px;
+                max-height: 16px;
                 position: relative;
 
                 img {
-                    max-height: 20px;
+                    height: 16px;
                     width: auto;
-                    max-width: 20px;
                     transition: all 0.2s ease-in-out;
                     display: block;
                     margin: auto;
