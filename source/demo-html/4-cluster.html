@@ -21,28 +21,47 @@
     <script src="../Jscripts/diemtin.min.js"></script>
 </head>
 
-<body>
+<body class="page-cluster">
     <!-- site header -->
     <header id="site-header" class="site-header">
-        <!-- header content -->
-        <div class="site-header__content">
-            <div class="logo"><a href="1-index.html"><img class="img-responsive" src="../App_Themes/img/logo.png" alt=""></a></div>
-            <!-- search -->
-            <div class="search-wrap active">
-                <span class="icon-search"><img src="../App_Themes/img/search-white.png" alt="" class="img-responsive"></span>
-                <input type="text" placeholder="Tìm kiếm trong chủ đề" class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <ul class="dropdown-menu" aria-labelledby="dLabel">
-                    <li><a href="4-cluster.html">Suggestion keyword</a></li>
-                    <li><a href="4-cluster.html">Suggestion keyword</a></li>
-                    <li><a href="4-cluster.html">Suggestion keyword</a></li>
-                </ul>
+        <div class="site-wrap">
+            <!-- header content -->
+            <div class="site-header__content">
+                <div class="logo"><a href="1-index.html"><img class="img-responsive" src="../App_Themes/img/logo.png" alt=""></a></div>
+                <!-- search -->
+                <div class="search-wrap active">
+                    <span class="icon-search"><img src="../App_Themes/img/search-white.png" alt="" class="img-responsive"></span>
+                    <input type="text" placeholder="Tìm kiếm trong chủ đề" class="form-control" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="4-cluster.html">Suggestion keyword</a></li>
+                        <li><a href="4-cluster.html">Suggestion keyword</a></li>
+                        <li><a href="4-cluster.html">Suggestion keyword</a></li>
+                    </ul>
+                </div>
+                <!-- user -->
+                <div class="user-wrap">
+                    <ul class="nav-action">
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="../App_Themes/img/share.png" alt="" class="origin">
+                                    <img src="../App_Themes/img/share-active.png" alt="" class="active">
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon">
+                                    <img src="../App_Themes/img/bookmark.png" alt="" class="origin">
+                                    <img src="../App_Themes/img/bookmark-active.png" alt="" class="active">
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <!-- user -->
-            <div class="user-wrap">
-                <a class="user__avatar" href="#"><img src="https://source.unsplash.com/random/24x24?sig=0" alt=""></a>
-            </div>
+            <!-- .End header content -->
         </div>
-        <!-- .End header content -->
     </header>
     <!-- .End site header -->
     <!-- site content -->
@@ -56,41 +75,16 @@
                 <li><a href="2-category.html">AFF SUZIKI CUP 2018</a><span class="count">113 tin</span></li>
                 <li><a href="2-category.html">AFF SUZIKI CUP 2018</a><span class="count">113 tin</span></li>
             </ul>
-            <!-- action -->
-            <ul class="nav-action">
-                <li><a href="#">
-                        <span class="icon">
-                            <img src="../App_Themes/img/share.png" alt="" class="origin">
-                            <img src="../App_Themes/img/share-active.png" alt="" class=" active">
-                        </span>
-                        <span class="text">Chia sẻ</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon">
-                            <img src="../App_Themes/img/bookmark.png" alt="" class="origin">
-                            <img src="../App_Themes/img/bookmark-active.png" alt="" class=" active">
-                        </span>
-                        <span class="text">Đánh dấu</span>
-                    </a>
-                </li>
-                <li><a href="#">
-                        <span class="icon">
-                            <img src="../App_Themes/img/avatar.png" alt="" class="origin">
-                            <img src="../App_Themes/img/avatar-active.png" alt="" class=" active">
-                        </span>
-                        <span class="text">Người dùng</span>
-                    </a>
-                </li>
-            </ul>
             <!-- breadcrumb -->
             <div class="breadcrumbs">
                 <h3 class="cate"><a href="2-category.html">Tên cluster</a></h3>
             </div>
             <!-- cluster -->
-            <section class="cluster">
+            <section class="cluster grid-wrap">
                 <div class="cluster__content">
-                    <article class="story">
+                    <div class="item-sizer"></div>
+                    <div class="gutter-sizer"></div>
+                    <article class="story grid-item">
                         <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/150x150?sig=" alt=""></a></div>
                         <div class="story__header">
                             <h2 class="story__title"><a href="3-detail.html">Nạn nhân vụ tai nạn liên hoàn ở Hà Nội: Xót xa nữ sinh nghèo đang chờ ngày tốt nghiệp sinh nghèo đang chờ ngày tốt nghiệp</a></h2>
@@ -100,8 +94,128 @@
                             </div>
                         </div>
                     </article>
-                    <article class="story">
+                    <article class="story grid-item">
                         <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/150x150?sig=0" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Neymar trút bỏ nỗi buồn hướng tới trận giao hữu Anh - Brazil</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/300x300?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Neymar trút bỏ nỗi buồn hướng tới trận giao hữu Anh - Brazil</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/640x360?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quos iste dolorem.</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/300x400?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores expedita laboriosam, explicabo!</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/400x300?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat a, atque! In.</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/300x300?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Neymar trút bỏ nỗi buồn hướng tới trận giao hữu Anh - Brazil</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/150x150?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Nạn nhân vụ tai nạn liên hoàn ở Hà Nội: Xót xa nữ sinh nghèo đang chờ ngày tốt nghiệp sinh nghèo đang chờ ngày tốt nghiệp</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/150x150?sig=0" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Neymar trút bỏ nỗi buồn hướng tới trận giao hữu Anh - Brazil</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/300x300?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Neymar trút bỏ nỗi buồn hướng tới trận giao hữu Anh - Brazil</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/640x360?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quos iste dolorem.</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/300x400?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores expedita laboriosam, explicabo!</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/400x300?sig=" alt=""></a></div>
+                        <div class="story__header">
+                            <h2 class="story__title"><a href="3-detail.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat a, atque! In.</a></h2>
+                            <div class="story__meta">
+                                <span class="story__source">VOV</span>
+                                <time class="story__time">January 12th, 2011</time>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="story grid-item">
+                        <div class="story__thumb"><a href="3-detail.html"><img class="lazyload img-responsive" data-src="https://source.unsplash.com/random/300x300?sig=" alt=""></a></div>
                         <div class="story__header">
                             <h2 class="story__title"><a href="3-detail.html">Neymar trút bỏ nỗi buồn hướng tới trận giao hữu Anh - Brazil</a></h2>
                             <div class="story__meta">
@@ -158,6 +272,7 @@
     </footer>
     <!-- .End site footer -->
     <!-- JS Global Customise -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="../Jscripts/custom.js"></script>
 </body>
 

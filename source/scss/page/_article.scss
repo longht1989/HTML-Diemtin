@@ -4,6 +4,10 @@
 .article {
     &-wrap {
         margin-bottom: 20px;
+
+        .nav-action {
+            margin: 16px 0;
+        }
     }
 
     &__header {
@@ -802,6 +806,23 @@
         .article__content {
             width: 100%;
             float: none;
+        }
+    }
+}
+
+.page-detail {
+    @include breakpoint(sm) {
+        background: #f0f0f0;
+
+        .site-content {
+
+            .article-wrap {
+                background-color: #fff;
+                max-width: 720px;
+                margin: 0 auto 20px;
+                padding: 24px;
+                border: 1px solid #ddd;
+            }
         }
     }
 }

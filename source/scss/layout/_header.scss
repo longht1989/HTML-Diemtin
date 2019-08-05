@@ -1,32 +1,28 @@
 /* ====================================   Header's style   ==================================== */
 
 .site-header {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid #ddd;
 
     &__content {
         @include clearfix();
-        background-color: white;
         position: relative;
-        margin-bottom: 10px;
-        padding: 10px;
-        transition: all 0.2s ease-in-out;
-        border-bottom: 1px solid transparent;
+        padding: 10px 0;
+    }
 
-        &.affix {
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
-            background: white;
-            border-bottom-color: #ddd;
-            // box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.13);
-            z-index: 100;
+    &.affix {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background: white;
+        border-bottom-color: #ddd;
+        // box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.13);
+        z-index: 100;
 
-            @include breakpoint(sm) {
-                max-width: 598px;
-                margin: auto;
-            }
-        }
+        @include breakpoint(sm) {}
     }
 
     .logo {
@@ -35,6 +31,11 @@
         width: 24px;
 
         img {}
+
+        @include breakpoint(sm) {
+            line-height: 40px;
+            width: 40px;
+        }
     }
 
     .search-wrap {
@@ -103,17 +104,62 @@
         .dropdown-menu {
             right: 0;
         }
+
+        @include breakpoint(sm) {
+            height: 40px;
+            width: calc(100% - 100px);
+
+            .form-control {
+                height: 40px;
+                padding-left: 40px;
+            }
+
+            .icon-search {
+                width: 24px;
+                height: 24px;
+                top: 8px;
+            }
+        }
     }
 
     .user {
         &-wrap {
             float: right;
+            width: 24px;
+
+            @include breakpoint(sm) {
+                width: 40px;
+            }
         }
 
         &__avatar {
             display: block;
             border-radius: 50%;
             overflow: hidden;
+        }
+    }
+}
+
+.page-cluster {
+
+    .site-header {
+
+        .search-wrap {
+            width: calc(100% - 110px);
+        }
+
+        .user-wrap {
+            width: 60px;
+        }
+
+        @include breakpoint(sm) {
+            .search-wrap {
+                width: calc(100% - 130px);
+            }
+
+            .user-wrap {
+                width: 70px;
+            }
         }
     }
 }

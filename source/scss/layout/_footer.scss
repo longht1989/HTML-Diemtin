@@ -7,10 +7,10 @@
     right: 0;
     background-color: white;
 
-    @include breakpoint(sm) {
-        max-width: 598px;
-        margin: auto;
-    }
+    // @include breakpoint(sm) {
+    //     max-width: 598px;
+    //     margin: auto;
+    // }
 
     .nav-bottom {
         display: flex;
@@ -20,6 +20,7 @@
 
         &>li {
             text-align: center;
+            width: 25%;
 
             .icon {
                 display: block;

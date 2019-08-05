@@ -97,4 +97,13 @@
         font-size: 14px;
         display: inline-block;
     }
+
+    .nav-action {
+        float: right;
+        margin-top: 4px;
+
+        @include breakpoint(sm) {
+            margin-top: 0;
+        }
+    }
 }

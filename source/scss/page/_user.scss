@@ -1,0 +1,67 @@
+/* user page */
+.user {
+
+    &__tool {
+        margin-top: 32px auto;
+
+        @include breakpoint(sm) {
+            max-width: 500px;
+            margin: 64px auto;
+            padding: 24px;
+            background: white;
+        }
+
+        .avatar {
+            img {
+                margin: auto;
+            }
+        }
+    }
+
+    &__action {
+        margin-top: 24px;
+
+        li {
+            margin-bottom: 16px;
+            border-radius: 50px;
+            background-color: #f0f0f0;
+            padding: 8px 16px;
+            text-align: center;
+            font-weight: bold;
+
+            >a {
+                display: block;
+            }
+        }
+
+        .btn {
+            border-radius: 50px;
+            background-color: gray;
+            color: white;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .button-group {
+            margin-top: 8px;
+        }
+
+        #viewsource.active {
+            background-color: #2ec1bb;
+            box-shadow: none;
+        }
+
+        #viewcrawl.active {
+            background-color: $brand-primary;
+            box-shadow: none;
+        }
+    }
+}
+
+.page-user {
+    @include breakpoint(sm) {
+        background: #f0f0f0;
+    }
+}
