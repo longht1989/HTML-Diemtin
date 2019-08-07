@@ -6,7 +6,24 @@
         margin-bottom: 20px;
 
         .nav-action {
-            margin: 16px 0;
+
+            @include breakpoint(sm) {
+                margin-left: auto;
+
+                &>li {
+                    margin-left: 16px;
+
+                    .icon {
+                        margin-bottom: 4px;
+                        margin-top: 0;
+
+                        img {
+                            max-width: 16px;
+                            max-height: 16px;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -34,6 +51,8 @@
         font-size: 14px;
         line-height: 20px;
         @include clearfix;
+        display: flex;
+        align-items: center;
 
         .article__author {
             color: #333;

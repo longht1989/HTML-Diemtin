@@ -2,7 +2,7 @@
 .category {
     &-listing {
         &>li {
-            font-size: 20px;
+            font-size: 16px;
             line-height: 1.4;
 
             &+li {
@@ -26,7 +26,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    // margin-bottom: 10px;
 
     &>li {
         // width: 33.33%;

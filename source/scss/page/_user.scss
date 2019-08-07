@@ -2,16 +2,13 @@
 .user {
 
     &__tool {
-        margin-top: 32px auto;
 
-        @include breakpoint(sm) {
-            max-width: 500px;
-            margin: 64px auto;
-            padding: 24px;
-            background: white;
-        }
+        @include breakpoint(sm) {}
 
         .avatar {
+            max-width: 50%;
+            margin: auto;
+
             img {
                 margin: auto;
             }
@@ -32,12 +29,24 @@
             >a {
                 display: block;
             }
+
+            &:last-child {
+                border-radius: 0;
+                background-color: transparent;
+                padding: 0;
+                text-align: center;
+            }
         }
 
         .btn {
             border-radius: 50px;
             background-color: gray;
             color: white;
+            min-width: 80%;
+
+            &+.btn {
+                margin-top: 8px;
+            }
 
             &:hover {
                 opacity: 0.8;
@@ -46,6 +55,19 @@
 
         .button-group {
             margin-top: 8px;
+
+            .btn-radio {
+                width: 50%;
+            }
+
+            input[type=radio] {
+                display: block;
+                margin: 0 auto 4px;
+            }
+
+            label {
+                font-weight: normal;
+            }
         }
 
         #viewsource.active {

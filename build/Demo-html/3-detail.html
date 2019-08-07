@@ -70,34 +70,34 @@
                     <div class="article__meta">
                         <span class="story__source">VOV</span>
                         <time class="story__time">January 12th, 2011</time>
+                        <!-- action -->
+                        <ul class="nav-action">
+                            <li><a href="#">
+                                    <span class="icon">
+                                        <img src="../App_Themes/img/flag.png" alt="" class="origin">
+                                        <img src="../App_Themes/img/flag-active.png" alt="" class=" active">
+                                    </span>
+                                    <span class="text">Báo lỗi</span>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <span class="icon">
+                                        <img src="../App_Themes/img/share.png" alt="" class="origin">
+                                        <img src="../App_Themes/img/share-active.png" alt="" class=" active">
+                                    </span>
+                                    <span class="text">Chia sẻ</span>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <span class="icon">
+                                        <img src="../App_Themes/img/bookmark.png" alt="" class="origin">
+                                        <img src="../App_Themes/img/bookmark-active.png" alt="" class=" active">
+                                    </span>
+                                    <span class="text">Đánh dấu</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- action -->
-                    <ul class="nav-action">
-                        <li><a href="#">
-                                <span class="icon">
-                                    <img src="../App_Themes/img/flag.png" alt="" class="origin">
-                                    <img src="../App_Themes/img/flag-active.png" alt="" class=" active">
-                                </span>
-                                <span class="text">Báo lỗi</span>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <span class="icon">
-                                    <img src="../App_Themes/img/share.png" alt="" class="origin">
-                                    <img src="../App_Themes/img/share-active.png" alt="" class=" active">
-                                </span>
-                                <span class="text">Chia sẻ</span>
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                <span class="icon">
-                                    <img src="../App_Themes/img/bookmark.png" alt="" class="origin">
-                                    <img src="../App_Themes/img/bookmark-active.png" alt="" class=" active">
-                                </span>
-                                <span class="text">Đánh dấu</span>
-                            </a>
-                        </li>
-                    </ul>
                     <div class="article__summary">Construction of a giant controversial dam in Laos has been well underway since it began in late 2012. <a href="#">Laos</a> is also set to push ahead with a second hydropower dam on the Mekong River this year in the face of growing concerns among its neighbors.</div>
                     <div class="article__avatar">
                         <p><img src="https://source.unsplash.com/random/666x374?sig=1"></p>
@@ -354,7 +354,7 @@
     <footer id="site-footer" class="site-footer">
         <ul class="nav-bottom">
             <li class="active">
-                <a href="#">
+                <a href="#" title="Xu hướng">
                     <span class="icon">
                         <img src="../App_Themes/img/chart.png" alt="" class="origin">
                         <img src="../App_Themes/img/chart-active.png" alt="" class=" active">
@@ -363,7 +363,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" title="Tin mới">
                     <span class="icon">
                         <img src="../App_Themes/img/fire.png" alt="" class="origin">
                         <img src="../App_Themes/img/fire-active.png" alt="" class=" active">
@@ -371,8 +371,8 @@
                     <span class="text">Tin mới</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li class="tool" data-menu="menu-category">
+                <a href="#" title="Chuyên mục">
                     <span class="icon">
                         <img src="../App_Themes/img/list.png" alt="" class="origin">
                         <img src="../App_Themes/img/list-active.png" alt="" class=" active">
@@ -380,8 +380,8 @@
                     <span class="text">Chuyên mục</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li class="tool" data-menu="menu-user">
+                <a href="#" title="Cá nhân">
                     <span class="icon">
                         <img src="../App_Themes/img/personal.png" alt="" class="origin">
                         <img src="../App_Themes/img/personal-active.png" alt="" class=" active">
@@ -391,6 +391,50 @@
             </li>
         </ul>
     </footer>
+    <!-- category -->
+    <div class="menu" id="menu-category">
+        <h3 class="menu__title">Chuyên mục</h3>
+        <ul class="category-listing">
+            <li><a href="4-cluster.html">Khí hậu môi trường</a></li>
+            <li><a href="4-cluster.html">Giao thông</a></li>
+            <li><a href="4-cluster.html">Khởi nghiệp</a></li>
+            <li><a href="4-cluster.html">Nghệ thuật</a></li>
+            <li><a href="4-cluster.html">Trò chơi</a></li>
+            <li><a href="4-cluster.html">Gia đình</a></li>
+            <li><a href="4-cluster.html">Kinh tế</a></li>
+            <li><a href="4-cluster.html">Lao động</a></li>
+        </ul>
+        <a class="close"><img class="img-responsive" src="../App_Themes/img/close.png" alt=""></a>
+    </div>
+    <!-- user -->
+    <div class="menu" id="menu-user">
+        <div class="user__tool">
+            <div class="avatar">
+                <img class="img-responsive" src="../App_Themes/img/user.png" alt="">
+            </div>
+            <ul class="user__action">
+                <li><a href="6-listing.html">Lịch sử đọc</a></li>
+                <li><a href="6-listing.html">Đã đánh dấu</a></li>
+                <li><a href="#">Chia sẻ ứng dụng</a></li>
+                <li><a href="#">Đánh giá ứng dụng</a></li>
+                <li>
+                    <p><b>Cấu hình đọc bài</b></p>
+                    <div class="button-group clearfix">
+                        <div class="btn-radio pull-left">
+                            <input type="radio" id="customRadioInline1" name="configview">
+                            <label class="custom-control-label" for="customRadioInline1">Xem tin gốc</label>
+                        </div>
+                        <div class="btn-radio pull-right">
+                            <input type="radio" id="customRadioInline2" name="configview">
+                            <label class="custom-control-label" for="customRadioInline2">Mở bằng Điểm tin</label>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a class="close"><img class="img-responsive" src="../App_Themes/img/close.png" alt=""></a>
+    </div>
+    <div class="mask"></div>
     <!-- .End site footer -->
     <!-- JS Global Customise -->
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>

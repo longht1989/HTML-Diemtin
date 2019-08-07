@@ -1,0 +1,96 @@
+/* Pushing menu */
+.mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.8;
+    z-index: 101;
+}
+
+.menu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    right: -300px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    padding: 24px;
+    overflow-x: auto;
+
+    &.is-active {
+        right: 0;
+    }
+
+    &__title {
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    .close {
+        max-width: 24px;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    @include breakpoint(md) {
+
+        /* width */
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, .9);
+            transition: all 0.2s ease-in-out;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 0, 0, .4);
+        }
+
+        .close {
+            max-width: 32px;
+        }
+    }
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    &.is-open {
+        left: -300px;
+
+        .mask {
+            display: block;
+        }
+    }
+}
